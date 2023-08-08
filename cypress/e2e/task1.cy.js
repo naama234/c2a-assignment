@@ -39,7 +39,7 @@ describe('DemoBlaze Test', () => {
       cy.log(`Cheapest Price: $${cheapestPhonePrice}`);
       cy.contains(cheapestPhoneTitle).click();
       cy.contains('Add to cart').click();
-      makeSureTheItemInCart(cheapestPhoneTitle)
+      makeSureTheItemInCart(cheapestPhoneTitle);
     });
   });
 });
