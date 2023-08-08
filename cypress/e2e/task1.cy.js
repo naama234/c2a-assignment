@@ -12,8 +12,8 @@ function makeSureTheItemInCart(itemName) {
   cy.get('tbody#tbodyid').contains(itemName).should('exist');
 }
 
-describe('DemoBlaze E-commerce Test', () => {
-  it('Should add the cheapest phone to cart', () => {
+describe('DemoBlaze Test', () => {
+  it('should add the cheapest phone to cart', () => {
     cy.visit('https://www.demoblaze.com/');
     logIn('automatedUser26@example.com', '4r4nd0mp4ssw0rd');
     cy.get('button.btn.btn-primary[onclick="logIn()"]').click();
