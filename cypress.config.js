@@ -1,4 +1,3 @@
-// cypress.config.js
 const { defineConfig } = require('cypress');
 const { readPdf } = require('./cypress/support/readPdf');
 
